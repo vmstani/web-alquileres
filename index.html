@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alquileres</title>
+    <!-- Boostrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <!-- FONT AWESOME -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+     <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- NAVEGATION -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="" style="width: 20%;">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Publicar Alojamiento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+</div>
+  </nav>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="background-overlay text py-5">
+          <div class="container">
+            <div class="row d-flex h-100">
+              <div class="col-lg-12 text-center justify-content-center align-self-center">
+                <form method="post" action=>
+                  <h1><b>Encontrá tu próximo destino</b></h1>
+                    <div class="containerE p-3">
+                      <div class="form-row align-items-center">
+                          <!-- Destino -->
+                          <div class="form-group col">                  
+                              <label for="destino_id" class="text mb-0">Destino</label>
+                              <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                </div>
+                                <input type="text" class="form-control" placeholder="¿A dónde vas?" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                              </div>
+                          <!-- Llegada -->
+                          <div class="form-group col">                  
+                            <label for="destino_id" class="text mb-0">Llegada</label>
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                              </div>
+                              <input type="date" placeholder="Elegir Fechas" aria-label="llegada">
+                            </div>
+                            </div>                        
+                          <!-- Salida -->
+                          <div class="form-group col">                  
+                            <label for="destino_id" class="text mb-0">Salida</label>
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                              </div>
+                              <input type="date" placeholder="Elegir Fechas" >
+                            </div>
+                            </div>  
+                            <div class="form-group col">                  
+                            <label for="destino_id" class="text mb-0">Huespedes</label>
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                              </div>
+                              <input type="text" placeholder="1 persona" >
+                            </div>
+                            </div>               
+                     <!-- botón enviar -->
+                      <div class="form-row text-center">
+                        <div class="form-group col ml-2">
+                            
+                            <button type="submit" class="btnFiltro">Buscar</button>
+                        </div>
+                    </div>
+                      </div>
+                    </div>
+                  </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+
+    <!-- Destinos más visitados -->
+
+    <section class="p-3">
+        <div class="container">
+          <div class="main">
+            <h1>Destinos más visitados</h1>
+            <ul class="cards">
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="../img/mdq.jpeg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Mar del Plata</h2>
+                    <p class="card_text">215 Alojmamientos</p>
+                    <button class="btn card_btn">Ver más</button>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="../img/cordoba.jpg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Córdoba</h2>
+                    <p class="card_text">215 Alojmamientos</p>
+                    <button class="btn card_btn">Ver más</button>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="../img/mendoza.jpeg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Mendoza</h2>
+                    <p class="card_text">215 Alojmamientos</p>
+                    <button class="btn card_btn">Ver más</button>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="../img/bs.jpg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Buenos Aires</h2>
+                    <p class="card_text">156 Alojmamientos</p>
+                    <button class="btn card_btn">Ver más</button>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="../img/bariloche.jpg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Bariloche</h2>
+                    <p class="card_text">205 Alojmamientos</p>
+                    <button class="btn card_btn">Ver más</button>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="../img/sanmartinandes.jpg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">San Martín de los andes</h2>
+                    <p class="card_text">215 Alojmamientos</p>
+                    <button class="btn card_btn">Ver más</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+    </section>
+    
+
+<!--Opiniones de clientes-->
+
+    <section class="py-5">
+      <div class="container">
+        <h2>Qué opinan los turistas en Google</h2>
+          <div class="row">
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card text-center bg-primary text-white">
+                    <div class="card">
+                      <img src="paisaje.png" alt="Avatar" style="width:100%">
+                      <div class="container">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+        <!-- CONTACT -->
+    <section class="bg-light py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3>Contact</h3>
+           
+              <form action="">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <i class="fas fa-user input-group-text"></i>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <i class="fas fa-envelope input-group-text"></i>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <i class="fas fa-pencil-alt input-group-text"></i>
+                  </div>
+                  <textarea name="" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <footer>
+        <div class="container p-3">
+          <div class="row text-center text-white">
+            <div class="col lg-9">
+              <h4>Seguinos</h4>
+             <div><i class="bi bi-whatsapp"></i> Whatsapp</div> 
+              <div><i class="bi bi-instagram"></i>Instagram</div> 
+              <div><i class="bi bi-facebook"></i>Facebook</div>
+            </div>
+          </div>
+          
+        </div> 
+      </footer>
+
+   
+
+   
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
